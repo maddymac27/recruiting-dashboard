@@ -1,0 +1,1 @@
+ALTER TABLE `applications` ADD `posting_url` text;

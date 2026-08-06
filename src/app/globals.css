@@ -1,0 +1,67 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+/* Theme: "şişe"-style clean/light dashboard (Dribbble reference), applied 2026-08-04.
+   Supersedes the earlier Claymorphism and the Phase 2 UI-SPEC blue/zinc palette:
+   soft light-gray page, white cards, a natural green primary, generous whitespace,
+   pastel per-stage status pills (defined in the table component), moderate radius.
+   IMPORTANT: UI-SPEC's "Accent" role -> shadcn's --primary variable, NOT
+   shadcn's own --accent variable (see RESEARCH Pitfall 3). */
+@theme inline {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-lg: var(--radius);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-sm: calc(var(--radius) - 4px);
+}
+
+:root {
+  --radius: 0.75rem;
+  --background: #f7f8fa;              /* soft light-gray page */
+  --foreground: #17181a;             /* near-black text */
+  --card: #ffffff;                   /* white cards + table */
+  --card-foreground: #17181a;
+  --popover: #ffffff;
+  --popover-foreground: #17181a;
+  --primary: #3e9e5b;                /* natural green — primary CTA, active nav, avatar, chart */
+  --primary-foreground: #ffffff;
+  --secondary: #f1f3f5;              /* light gray — muted chips/surfaces */
+  --secondary-foreground: #374151;
+  --muted: #f1f3f5;
+  --muted-foreground: #6b7280;       /* gray labels */
+  --accent: #eaf6ef;                 /* pale green — hover states */
+  --accent-foreground: #166534;
+  --destructive: #ef4444;            /* red — failures / "Gone quiet" */
+  --destructive-foreground: #ffffff;
+  --border: #eaecef;                 /* hairline gray */
+  --input: #eaecef;
+  --ring: #3e9e5b;                   /* focus rings use the green primary */
+  --chart-1: #3e9e5b;
+  --chart-2: #6bbf8a;
+  --chart-3: #2f7d48;
+  --chart-4: #a7dcb9;
+  --chart-5: #14532d;
+}
