@@ -353,6 +353,16 @@ Plans:
 
 - [ ] TBD (promote with /gsd-review-backlog when ready)
 
+### Phase 999.4: Seed demo mode with example Review-queue & Dead-letter items (BACKLOG)
+
+**Goal:** [Captured 2026-08-06] Seed the demo store with a few example Review-queue items and Dead-letter items so a viewer of the hosted demo can see (a) what a parsed/ingested ATS email looks like once it lands in the tracker, and (b) the fail-loud triage workflow end to end — confirming/attaching a review-queue item into the Pipeline, and inspecting an unparseable dead-letter email via the raw-email viewer. Makes the ingestion + fail-loud story demonstrable on the portfolio demo without a live Gmail connection. Must stay demo/real-separated (fictional senders + bodies only, consistent with the existing portfolio-safe demo seed).
+**Requirements:** TBD (presentability / demo — extends REL-01/REL-02 fail-loud surfacing into the demo dataset)
+**Plans:** 0 plans
+
+Plans:
+
+- [ ] TBD (promote with /gsd-review-backlog when ready)
+
 ---
 *Roadmap created: 2026-07-22*
 *Granularity: standard*

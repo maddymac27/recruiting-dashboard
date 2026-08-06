@@ -27,8 +27,10 @@ interface NavShellProps {
 }
 
 const NAV_ITEMS: Array<{ href: string; label: string; match: (p: string) => boolean }> = [
-  { href: "/", label: "Today", match: (p) => p === "/" },
-  { href: "/board", label: "Pipeline", match: (p) => p.startsWith("/board") },
+  // Pipeline is the landing view ("/" redirects to /board), so it leads the
+  // nav; Today sits directly beneath it.
+  { href: "/board", label: "Pipeline", match: (p) => p === "/" || p.startsWith("/board") },
+  { href: "/today", label: "Today", match: (p) => p.startsWith("/today") },
   { href: "/analytics", label: "Analytics", match: (p) => p.startsWith("/analytics") },
   { href: "/contacts", label: "Contact Database", match: (p) => p.startsWith("/contacts") },
   { href: "/outreach", label: "Outreach", match: (p) => p.startsWith("/outreach") },
