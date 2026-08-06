@@ -343,6 +343,16 @@ Plans:
 
 - [ ] TBD (promote with /gsd-review-backlog when ready)
 
+### Phase 999.3: Recorded demo walkthrough for portfolio (BACKLOG)
+
+**Goal:** [Captured 2026-08-06] A polished screen-recorded walkthrough (video/GIF) plus screenshots of the dashboard running in demo mode, embedded in Maddy's professional portfolio site as a companion/fallback to the live hosted demo. Deferred deliberately until the dashboard is more fully fleshed out, so the recording reflects the finished product. Capture in demo mode (`DASHBOARD_MODE=demo`) so no real data is exposed.
+**Requirements:** TBD (portfolio / presentability — complements the live demo hosted via Docker on Render/Railway)
+**Plans:** 0 plans
+
+Plans:
+
+- [ ] TBD (promote with /gsd-review-backlog when ready)
+
 ---
 *Roadmap created: 2026-07-22*
 *Granularity: standard*

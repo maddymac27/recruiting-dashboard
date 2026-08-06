@@ -1,0 +1,14 @@
+# Render Blueprint — one-file deploy config for the public demo.
+# In Render: New > Blueprint, point it at this repo, and it reads this file.
+# The service builds the Dockerfile and runs the app locked to demo mode.
+services:
+  - type: web
+    name: recruiting-dashboard-demo
+    runtime: docker
+    dockerfilePath: ./Dockerfile
+    plan: free # free web services spin down after ~15 min idle (cold start on next visit)
+    autoDeploy: true # redeploy on every push to the connected branch
+    healthCheckPath: /
+    envVars:
+      - key: DASHBOARD_MODE
+        value: demo

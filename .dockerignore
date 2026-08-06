@@ -1,0 +1,17 @@
+# Keep the build context small and never ship local data or secrets.
+node_modules
+.next
+out
+.git
+.claude
+.planning
+tests
+data/*.sqlite
+data/*.sqlite-*
+.secrets
+.env
+.env.*
+!.env.example
+*.log
+npm-debug.log*
+.DS_Store

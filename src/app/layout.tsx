@@ -40,6 +40,14 @@ export const metadata = {
   title: "Recruiting Dashboard",
 };
 
+// This is a live, always-changing dashboard (Gmail sync + manual edits), so
+// every request should render against the current DB rather than a build-time
+// snapshot. Forcing dynamic rendering here (the layout wraps every route)
+// keeps the hosted demo instantly reflecting edits and avoids serving stale
+// prerendered pages. Static optimization has no meaningful benefit for a
+// single-user, low-traffic local tool.
+export const dynamic = "force-dynamic";
+
 export default function RootLayout({ children }: { children: ReactNode }) {
   const isConnected = hasStoredToken();
 
