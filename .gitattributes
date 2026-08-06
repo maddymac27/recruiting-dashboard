@@ -1,0 +1,6 @@
+# Keep shell scripts and the Dockerfile LF-only so they run correctly inside
+# Linux containers regardless of the contributor's OS (a stray CRLF breaks the
+# demo container's entrypoint).
+*.sh text eol=lf
+docker-entrypoint.sh text eol=lf
+Dockerfile text eol=lf
